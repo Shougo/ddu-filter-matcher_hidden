@@ -1,7 +1,7 @@
-import { BaseFilter, DduItem, SourceOptions } from "https://deno.land/x/ddu_vim@v0.7.0/types.ts";
-import { Denops } from "https://deno.land/x/ddu_vim@v0.7.0/deps.ts";
-import { ActionData } from "https://deno.land/x/ddu_kind_file@v0.1.0/file.ts#^";
-import { basename } from "https://deno.land/std@0.123.0/path/mod.ts";
+import { BaseFilter, DduItem, SourceOptions } from "https://deno.land/x/ddu_vim@v0.14/types.ts";
+import { Denops } from "https://deno.land/x/ddu_vim@v0.14/deps.ts";
+import { ActionData } from "https://deno.land/x/ddu_kind_file@v0.2.0/file.ts#^";
+import { basename, dirname } from "https://deno.land/std@0.126.0/path/mod.ts";
 
 type Params = Record<never, never>;
 
@@ -18,6 +18,7 @@ export class Filter extends BaseFilter<Params> {
         if (!action.path) { return false; }
         return args.input.includes(".") ||
           (!basename(action.path).startsWith(".") &&
+           !basename(dirname(action.path)).startsWith(".") &&
            !item.matcherKey.startsWith("."));
       }
     ));
