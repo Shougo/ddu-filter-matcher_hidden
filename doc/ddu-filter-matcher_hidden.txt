@@ -29,11 +29,10 @@ https://github.com/vim-denops/denops.vim
 ==============================================================================
 EXAMPLES			*ddu-filter-matcher_hidden-examples*
 >
-	" Use matcher_hidden filter.
-	call ddu#custom#patch_global({
-	    \   'sourceOptions': {
-	    \     '_': {
-	    \       'matchers': ['matcher_hidden'],
+	call ddu#custom#patch_global(#{
+	    \   sourceOptions: #{
+	    \     _: #{
+	    \       matchers: ['matcher_hidden'],
 	    \     },
 	    \   }
 	    \ })

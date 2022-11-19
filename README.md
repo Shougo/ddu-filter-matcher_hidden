@@ -17,11 +17,10 @@ https://github.com/Shougo/ddu.vim
 ## Configuration
 
 ```vim
-" Use the filter.
-call ddu#custom#patch_global({
-    \   'sourceOptions': {
-    \     '_': {
-    \       'matchers': ['matcher_hidden'],
+call ddu#custom#patch_global(#{
+    \   sourceOptions: #{
+    \     _: #{
+    \       matchers: ['matcher_hidden'],
     \     },
     \   }
     \ })
