@@ -2,12 +2,12 @@ import {
   BaseFilter,
   DduItem,
   SourceOptions,
-} from "https://deno.land/x/ddu_vim@v3.0.2/types.ts";
-import { Denops } from "https://deno.land/x/ddu_vim@v3.0.2/deps.ts";
-import { ActionData } from "https://deno.land/x/ddu_kind_file@v0.5.0/file.ts";
-import { basename, dirname } from "https://deno.land/std@0.191.0/path/mod.ts";
+} from "https://deno.land/x/ddu_vim@v3.5.0/types.ts";
+import { Denops } from "https://deno.land/x/ddu_vim@v3.5.0/deps.ts";
+import { ActionData } from "https://deno.land/x/ddu_kind_file@v0.5.3/file.ts";
+import { basename, dirname } from "https://deno.land/std@0.198.0/path/mod.ts";
 
-type Params = Record<never, never>;
+type Params = Record<string, never>;
 
 export class Filter extends BaseFilter<Params> {
   override filter(args: {
