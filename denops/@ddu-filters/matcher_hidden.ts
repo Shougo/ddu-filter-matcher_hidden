@@ -2,10 +2,13 @@ import {
   BaseFilter,
   DduItem,
   SourceOptions,
-} from "https://deno.land/x/ddu_vim@v4.0.0/types.ts";
-import { Denops } from "https://deno.land/x/ddu_vim@v4.0.0/deps.ts";
+} from "https://deno.land/x/ddu_vim@v4.1.0/types.ts";
+import {
+  basename,
+  Denops,
+  dirname,
+} from "https://deno.land/x/ddu_vim@v4.1.0/deps.ts";
 import { ActionData } from "https://deno.land/x/ddu_kind_file@v0.7.1/file.ts";
-import { basename, dirname } from "jsr:@std/path@0.224.0";
 
 type Params = Record<string, never>;
 
