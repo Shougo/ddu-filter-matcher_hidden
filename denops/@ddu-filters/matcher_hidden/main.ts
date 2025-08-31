@@ -1,15 +1,12 @@
-import {
-  type DduItem,
-  type SourceOptions,
-} from "jsr:@shougo/ddu-vim@~6.1.0/types";
-import { BaseFilter } from "jsr:@shougo/ddu-vim@~6.1.0/filter";
+import type { DduItem, SourceOptions } from "@shougo/ddu-vim/types";
+import { BaseFilter } from "@shougo/ddu-vim/filter";
 
-import { type ActionData } from "jsr:@shougo/ddu-kind-file@~0.9.0";
+import type { ActionData } from "@shougo/ddu-kind-file";
 
-import type { Denops } from "jsr:@denops/core@~7.0.0";
+import type { Denops } from "@denops/std";
 
-import { basename } from "jsr:@std/path@~1.0.3/basename";
-import { dirname } from "jsr:@std/path@~1.0.3/dirname";
+import { basename } from "@std/path/basename";
+import { dirname } from "@std/path/dirname";
 
 type Params = Record<string, never>;
 
