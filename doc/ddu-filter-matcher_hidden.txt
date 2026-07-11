@@ -3,7 +3,7 @@
 Author: Shougo <Shougo.Matsu at gmail.com>
 License: MIT license
 
-CONTENTS				*ddu-filter-matcher_hidden*
+CONTENTS                                           *ddu-filter-matcher_hidden*
 
 Introduction		|ddu-filter-matcher_hidden-introduction|
 Install			|ddu-filter-matcher_hidden-install|
@@ -12,13 +12,13 @@ Params			|ddu-filter-matcher_hidden-params|
 
 
 ==============================================================================
-INTRODUCTION			*ddu-filter-matcher_hidden-introduction*
+INTRODUCTION                          *ddu-filter-matcher_hidden-introduction*
 
 This matcher filters hidden files items.
 
 
 ==============================================================================
-INSTALL				*ddu-filter-matcher_hidden-install*
+INSTALL                                    *ddu-filter-matcher_hidden-install*
 
 Please install both "ddu.vim" and "denops.vim".
 
@@ -27,8 +27,8 @@ https://github.com/vim-denops/denops.vim
 
 
 ==============================================================================
-EXAMPLES			*ddu-filter-matcher_hidden-examples*
->
+EXAMPLES                                  *ddu-filter-matcher_hidden-examples*
+>vim
 	call ddu#custom#patch_global(#{
 	    \   sourceOptions: #{
 	    \     _: #{
@@ -39,7 +39,7 @@ EXAMPLES			*ddu-filter-matcher_hidden-examples*
 <
 
 ==============================================================================
-PARAMS				*ddu-filter-matcher_hidden-params*
+PARAMS                                      *ddu-filter-matcher_hidden-params*
 
 
 ==============================================================================
